@@ -166,6 +166,10 @@ a {
     font-size: 25px;
   }
 
+#h1about {
+  color: #AA7BC3;
+}
+
 .scroll-down {
     /* left: 50%; */
     bottom: 10px;
@@ -224,7 +228,14 @@ a {
     width:50%;
     padding-left: 15%;
     padding-top: 8%;
+    justify-content: flex-start;
 }
+
+#aboutbutton {
+  width: fit-content;
+  margin-right: 413px;
+}
+
 .imgaboutwrapper {
     display: flex;
     width:50%;
@@ -317,6 +328,7 @@ a {
   }
   .bar.back::before{
     background-color: #AA7BC3;
+    align-items: center;
   }
   
   .bar.learning {
