@@ -237,6 +237,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    height: auto;
 }
   @keyframes load{
     from {
@@ -268,6 +269,10 @@ body{
     color: #FFF;
     font-weight: bold;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px;
+    width: calc(100% - 10px);
   }
   .bar::before{
     content:  attr(data-skill);
@@ -279,6 +284,7 @@ body{
     -webkit-animation: load 2s 0s;
     -moz-animation: load 2s 0s;
     -o-animation: load 2s 0s;
+
   }
   
   .bar.front::before{
@@ -288,21 +294,40 @@ body{
     background-color: #AA7BC3;
   }
   
+  .bar.learning {
+    height: 50px;
+  }
   .bar.learning::before{
-    width: calc(20% - 70px);
-    width: 50px;
+    width: calc(90% - 10px);
+    width: 100px;
   }
   .bar.basic::before{
-    width: calc(40% - 10px);
+    width: calc(85% - 10px);
+    width: 100px;
+  }
+  .bar.basic{
+    height: auto;
   }
   .bar.intermediate::before{
-    width: calc(60% - 10px);
+    width: calc(70% - 10px);
+    width: 100px;
+  }
+  .bar.intermediate{
+    height: auto;
   }
   .bar.advanced::before{
-    width: calc(80% - 10px);
+    width: calc(70% - 10px);
+    width: 100px;
+  }
+  .bar.advanced{
+    height: auto;
   }
   .bar.expert::before{
-    width: calc(100% - 10px);
+    width: calc(90% - 10px);
+    width: 100px;
+  }
+  .bar.expert{
+    height: auto;
   }
                   
 #container {
@@ -484,7 +509,7 @@ a.slide__next{
     margin: 0 auto;
     overflow: hidden;
     width: 1000px;
-    height: 450px;
+    height: 650px;
   }
   
   figure {
@@ -504,6 +529,7 @@ a.slide__next{
     float: left;
     padding-top: 3rem;
     padding-bottom: 3em;
+    height: fit-content;
   }
   
   @-webkit-keyframes slider {

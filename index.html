@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="responsive.css">
     <title>Olivia-Portfolio</title>
 </head>
+
 <body>
-    <div class="header">
+    <div class="header" id="home">
         <nav class="nav-bar">
-                <div class="logo">
-                    <img id="logoid" src="Images\Logo OS Blanc.svg">
-                </div>
-                <div class="menu">
-                    <ul class="menu_item">
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Portfolio</li>
-                        <li>Contact</li>
-                    </ul>
-                    <img class="logo_rs" src="Images/Icone LinkedIn Blanc.svg">
-                    <img class="logo_rs" src="Images/Logo X Blanc.svg">
-                </div>
+            <div class="logo">
+                <img id="logoid" src="Images\Logo OS Blanc.svg">
+            </div>
+            <div class="menu">
+                <ul class="menu_item" id="menu-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="#skills">skills</a></li>
+                    <li><a href="#portfollio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <img class="logo_rs" src="Images/Icone LinkedIn Blanc.svg">
+                <img class="logo_rs" src="Images/Logo X Blanc.svg">
+            </div>
         </nav>
         <div class="centreheader">
-            <img id= imgheader src="Images\Central header site perso.png">
+            <img id=imgheader src="Images\Central header site perso.png">
         </div>
         <div class="textheaderwrapper">
             <div class="textheader">
@@ -37,36 +39,46 @@
             </div>
         </div>
 
+        <!-- Hamburger Icon for Mobile -->
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
     </div>
+
     <div class="statement">
-            <div id="statement">
-                <h3>Do you need a skilled designer and product manager to take your project to the next level?</h1>
+        <div id="statement">
+            <h3>Do you need a skilled designer and product manager to take your project to the next level?</h1>
                 <p>You came into the right place!</p>
                 <div class="scroll-down">
                     <img src="Images\icons8-arrow-100.png">
                 </div>
-            </div>
+        </div>
     </div>
-    <div class="about">
+    <div class="about" id="about">
         <div class="abouttext">
             <p>Hi !</p>
             <h1 id="h1">My name is Olivia</h1>
-            <p>I'm a Tech entrepreneur on a mission to bridge the gap and create opportunities in Africa. As a passionate problem solver, I'm dedicated to crafting innovative solutions that deliver real results using my design and product development. Explore my projects and let's work together in making a positive impact and creating value ! Together, we can shape a brighter future for Africa.</p>
+            <p>I'm a Tech entrepreneur on a mission to bridge the gap and create opportunities in Africa. As a
+                passionate problem solver, I'm dedicated to crafting innovative solutions that deliver real results
+                using my design and product development. Explore my projects and let's work together in making a
+                positive impact and creating value ! Together, we can shape a brighter future for Africa.</p>
         </div>
         <div class="imgaboutwrapper">
             <img id=firstimg src="Images\Olivia_SAMEY_-_About-nobg.png">
         </div>
     </div>
 
-    <div class="containerskills">
+    <div class="containerskills" id="skills">
         <h1>Skill Set</h1>
         <div class="wrapperskills">
-            <div class="bar learning" data-skill="TDD"></div>
-            <div class="bar back basic" data-skill="Python"></div>
-            <div class="bar back intermediate" data-skill="C#"></div>
-            <div class="bar front advanced" data-skill="CSS3"></div>
-            <div class="bar front expert" data-skill="HTML5"></div>
-        </div>    
+            <div class="bar learning" data-skill="Web Design"></div>
+            <div class="bar back basic" data-skill="Project Management"></div>
+            <div class="bar back intermediate" data-skill="Digital Marketing"></div>
+            <div class="bar front advanced" data-skill="Business Planning"></div>
+            <div class="bar front expert" data-skill="Content Writing"></div>
+        </div>
     </div>
 
     <div id="container">
@@ -85,25 +97,25 @@
                     <div class="panel-title">Some of my website and web app designs</div>
                     <div class="slider-container">
                         <div class="slider">
-                          <div class="slides">
-                            <div id="slides__1" class="slide">
-                            <img src="Images\Portfolio Item\1.png">
-                            <a class="slide__prev" href="#slides__3" title="Prev"></a>
-                            <a class="slide__next" href="#slides__2" title="Next"></a>
+                            <div class="slides">
+                                <div id="slides__1" class="slide">
+                                    <img src="Images\Portfolio Item\1.png">
+                                    <a class="slide__prev" href="#slides__3" title="Prev"></a>
+                                    <a class="slide__next" href="#slides__2" title="Next"></a>
+                                </div>
+                                <div id="slides__2" class="slide">
+                                    <img src="Images\Portfolio Item\2.png">
+                                    <a class="slide__prev" href="#slides__1" title="Prev"></a>
+                                    <a class="slide__next" href="#slides__3" title="Next"></a>
+                                </div>
+                                <div id="slides__3" class="slide">
+                                    <img src="Images\Portfolio Item\3.png">
+                                    <a class="slide__prev" href="#slides__2" title="Prev"></a>
+                                    <a class="slide__next" href="#slides__1" title="Next"></a>
+                                </div>
                             </div>
-                            <div id="slides__2" class="slide">
-                                <img src="Images\Portfolio Item\2.png">
-                                <a class="slide__prev" href="#slides__1" title="Prev"></a>
-                                <a class="slide__next" href="#slides__3" title="Next"></a>
-                            </div>
-                            <div id="slides__3" class="slide">
-                                <img src="Images\Portfolio Item\3.png">
-                                <a class="slide__prev" href="#slides__2" title="Prev"></a>
-                                <a class="slide__next" href="#slides__1" title="Next"></a>
-                            </div>
-                            </div>
-                            </div>
-                      </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="panel" id="two-panel">
                     <div class="panel-title">Some of mobile app designs</div>
@@ -122,41 +134,41 @@
                                 </div>
                             </div>
                         </div>
-                        </div>
+                    </div>
                 </div>
                 <div class="panel" id="three-panel">
                     <div class="panel-title">Some of my other designs (socials medias, flyers and more)</div>
                     <div class="slider-container">
                         <div class="slider">
-                          <div class="slides">
-                            <div id="slides__1.2" class="slide">
-                                <img src="Images\Portfolio Item\6.png">
-                                <a class="slide__prev" href="#slides__5.2" title="Prev"></a>
-                                <a class="slide__next" href="#slides__2.2" title="Next"></a>
-                            </div>
-                            <div id="slides__2.2" class="slide">
-                                <img src="Images\Portfolio Item\7.png">
-                                <a class="slide__prev" href="#slides__1.2" title="Prev"></a>
-                                <a class="slide__next" href="#slides__3.2" title="Next"></a>
-                            </div>
-                            <div id="slides__3.2" class="slide">
-                                <img src="Images\Portfolio Item\8.png">
-                                <a class="slide__prev" href="#slides__2.2" title="Prev"></a>
-                                <a class="slide__next" href="#slides__4.2" title="Next"></a>
-                            </div>
-                            <div id="slides__4.2" class="slide">
-                                <img src="Images\Portfolio Item\9.png">
-                                <a class="slide__prev" href="#slides__3.2" title="Prev"></a>
-                                <a class="slide__next" href="#slides__5.2" title="Prev"></a>
-                            </div>
-                            <div id="slides__5.2" class="slide">
-                                <img src="Images\Portfolio Item\11.png">
-                                <a class="slide__prev" href="#slides__4.2" title="Prev"></a>
-                                <a class="slide__next" href="#slides__1.2" title="Prev"></a>
-                            </div>
+                            <div class="slides">
+                                <div id="slides__1.2" class="slide">
+                                    <img src="Images\Portfolio Item\6.png">
+                                    <a class="slide__prev" href="#slides__5.2" title="Prev"></a>
+                                    <a class="slide__next" href="#slides__2.2" title="Next"></a>
+                                </div>
+                                <div id="slides__2.2" class="slide">
+                                    <img src="Images\Portfolio Item\7.png">
+                                    <a class="slide__prev" href="#slides__1.2" title="Prev"></a>
+                                    <a class="slide__next" href="#slides__3.2" title="Next"></a>
+                                </div>
+                                <div id="slides__3.2" class="slide">
+                                    <img src="Images\Portfolio Item\8.png">
+                                    <a class="slide__prev" href="#slides__2.2" title="Prev"></a>
+                                    <a class="slide__next" href="#slides__4.2" title="Next"></a>
+                                </div>
+                                <div id="slides__4.2" class="slide">
+                                    <img src="Images\Portfolio Item\9.png">
+                                    <a class="slide__prev" href="#slides__3.2" title="Prev"></a>
+                                    <a class="slide__next" href="#slides__5.2" title="Prev"></a>
+                                </div>
+                                <div id="slides__5.2" class="slide">
+                                    <img src="Images\Portfolio Item\11.png">
+                                    <a class="slide__prev" href="#slides__4.2" title="Prev"></a>
+                                    <a class="slide__next" href="#slides__1.2" title="Prev"></a>
+                                </div>
                             </div>
                         </div>
-                      </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -165,22 +177,22 @@
     <div class="testimonials">
         <section id="slider-container">
             <div id="testimonials">
-              <figure class="single-testimonial">
-                <blockquote>
-                  <p>"This is the first testimonial"</p>
-                  <footer>- <cite>Joe Schmo</cite></footer>
-                </blockquote>
-                <blockquote>
-                  <p>"This is the second testimonial"</p>
-                  <footer>- <cite>Joe Schmo</cite></footer>
-                </blockquote>
-                <blockquote>
-                  <p>"This is the third testimonial"</p>
-                  <footer>- <cite>Joe Schmo</cite></footer>
-                </blockquote>
-              </figure>
+                <figure class="single-testimonial">
+                    <blockquote>
+                        <p>"I consider Olivia the best in UI/UX designer I’ve worked with so far. As a front end developer, she made my work easy by streamlining the design to code process in a seamless manner without complicating either process."</p>
+                        <footer>- <cite>Bernard ADDY SACKEY</cite></footer>
+                    </blockquote>
+                    <blockquote>
+                        <p>"This is the second testimonial"</p>
+                        <footer>- <cite>Joe Schmo</cite></footer>
+                    </blockquote>
+                    <!-- <blockquote>
+                        <p>"This is the third testimonial"</p>
+                        <footer>- <cite>Joe Schmo</cite></footer> -->
+                    </blockquote>
+                </figure>
             </div>
-          </section>
+        </section>
     </div>
 
     <div class="form">
@@ -201,5 +213,18 @@
         <p id="footer_text">@2023 Olivia SAMEY </p>
     </div>
 
+    <script>
+        function toggleMenu() {
+            alert("hello");
+            var menuLinks = document.getElementById("menu-links");
+            if (menuLinks.style.display === "flex") {
+                menuLinks.style.display = "none";
+            } else {
+                menuLinks.style.display = "flex";
+            }
+        }
+
+    </script>
 </body>
+
 </html>
