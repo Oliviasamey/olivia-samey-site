@@ -252,6 +252,10 @@ a {
     text-align: center;
   }
 
+#h1skills {
+  color: #ffffff;
+}
+
 .wrapperskills {
     width: 50%;
     margin: 0 auto;
@@ -327,7 +331,7 @@ a {
     width: 100px;
   }
   .bar.basic{
-    height: auto;
+    height: 50px;
   }
   .bar.intermediate::before{
     width: calc(70% - 10px);
@@ -506,7 +510,7 @@ a.slide__next{
 
 .testimonials {
     background-color: #AA7BC3;
-    height: 40vh;
+    height: 50vh;
     z-index: 3;
     position: relative;
     align-items: center;
@@ -514,6 +518,7 @@ a.slide__next{
     padding-left: 400px;
     padding-right: 400px;
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
 }
 
 #slider-container {
@@ -521,17 +526,27 @@ a.slide__next{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding-top: 80px;
+    padding-top: 10px;
 
   }
+
+#h1testimonial {
+  color: #ffffff;
+}
+
 #testimonials {
     position: relative;
     justify-content: center;
     margin: 0 auto;
     overflow: hidden;
     width: 1000px;
-    height: 650px;
+    height: 1000px;
+    color: #ffffff;
   }
+
+  /* #slider-container {
+    height: fit-content;
+  } */
   
   figure {
     position: absolute;
@@ -542,15 +557,16 @@ a.slide__next{
     border-top: 1px solid #c2c1c2;
     border-bottom: 1px solid #c2c1c2;
     margin: 0;
+    height: 1000px;
   }
   
   blockquote {
     width: 25%;
+    height: 100%;
     margin: 0;
     float: left;
     padding-top: 3rem;
     padding-bottom: 3em;
-    height: fit-content;
   }
   
   @-webkit-keyframes slider {
